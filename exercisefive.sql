@@ -13,11 +13,12 @@ DROP DATABASE purwadhika_schedule;
 -- Create table name as Students in purwadhika_student db, with field id, last_name, first_name, address, city. The id field should be in integer type while the rest is varchar.
 USE purwadhika_student;
 CREATE TABLE Students (
-    id int,
-    last_name varchar(255),
+    id int NOT NULL,
+    last_name varchar(255) NOT NULL,
     first_name varchar(255),
     address varchar(255),
-    city varchar(255)
+    city varchar(255),
+	CONSTRAINT PK_Students PRIMARY KEY (id,last_name)
 );
 
 -- Add email column into table Students with type varchar.
