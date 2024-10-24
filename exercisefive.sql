@@ -1,5 +1,9 @@
 -- Exercise
 -- Create db name as purwadhika_student, purwadhika_schedule, purwadhika_branch
+CREATE DATABASE purwadhika_student; 
+CREATE DATABASE purwadhika_schedule; 
+CREATE DATABASE purwadhika_branch;
+
 -- Show list of database with name contain purwadhika.
 -- Delete database purwadhika_schedule
 -- Create table name as Students in purwadhika_student db, with field id, last_name, first_name, address, city. The id field should be in integer type while the rest is varchar.
