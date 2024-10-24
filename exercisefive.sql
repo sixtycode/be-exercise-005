@@ -11,6 +11,15 @@ SHOW DATABASES LIKE 'purwadhika%';
 DROP DATABASE purwadhika_schedule;
 
 -- Create table name as Students in purwadhika_student db, with field id, last_name, first_name, address, city. The id field should be in integer type while the rest is varchar.
+USE purwadhika_student;
+CREATE TABLE Students (
+    id int,
+    last_name varchar(255),
+    first_name varchar(255),
+    address varchar(255),
+    city varchar(255)
+);
+
 -- Add email column into table Students with type varchar.
 -- Add gender, batch_code, phone_number, alternative_phone_number column in single query.
 -- Change alternative_phone_number column name into description with varchar type.
