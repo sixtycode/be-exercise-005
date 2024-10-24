@@ -6,6 +6,8 @@ CREATE DATABASE purwadhika_branch;
 
 -- Show list of database with name contain purwadhika.
 -- Delete database purwadhika_schedule
+DROP DATABASE purwadhika_schedule;
+
 -- Create table name as Students in purwadhika_student db, with field id, last_name, first_name, address, city. The id field should be in integer type while the rest is varchar.
 -- Add email column into table Students with type varchar.
 -- Add gender, batch_code, phone_number, alternative_phone_number column in single query.
