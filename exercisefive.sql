@@ -21,6 +21,9 @@ CREATE TABLE Students (
 );
 
 -- Add email column into table Students with type varchar.
+ALTER TABLE Students
+ADD email varchar(255);
+
 -- Add gender, batch_code, phone_number, alternative_phone_number column in single query.
 -- Change alternative_phone_number column name into description with varchar type.
 -- Remove column gender in table Students
