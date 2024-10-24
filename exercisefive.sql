@@ -5,6 +5,8 @@ CREATE DATABASE purwadhika_schedule;
 CREATE DATABASE purwadhika_branch;
 
 -- Show list of database with name contain purwadhika.
+SHOW DATABASES LIKE 'purwadhika%';
+
 -- Delete database purwadhika_schedule
 DROP DATABASE purwadhika_schedule;
 
