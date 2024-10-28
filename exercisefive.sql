@@ -14,18 +14,27 @@ DROP DATABASE purwadhika_schedule;
 USE purwadhika_student;
 CREATE TABLE Students (
     id int NOT NULL,
-    last_name varchar(255) NOT NULL,
-    first_name varchar(255),
-    address varchar(255),
+    last_name varchar(255),
+    first_name varchar(255) NOT NULL,
+    address varchar(255) NOT NULL,
     city varchar(255),
 	CONSTRAINT PK_Students PRIMARY KEY (id,last_name)
 );
 
 -- Add email column into table Students with type varchar.
 ALTER TABLE Students
-ADD email varchar(255);
+ADD email varchar(255 NOT NULL);
 
 -- Add gender, batch_code, phone_number, alternative_phone_number column in single query.
+USE purwadhika_student;
+ALTER TABLE Students
+ADD (
+    gender ENUM('Male', 'Female'), 
+    batch_code int, 
+    phone_number varchar(25) NOT NULL, 
+    alternative_phone_number varchar(25)
+);
+
 -- Change alternative_phone_number column name into description with varchar type.
 -- Remove column gender in table Students
 -- Since you already create purwadhika_branch database, use that db to complete this exercise.
